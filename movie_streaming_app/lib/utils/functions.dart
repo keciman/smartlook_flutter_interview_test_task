@@ -33,7 +33,8 @@ class Functions {
     int pixelCount = 0;
 
     final halfWidth = pixelImage.width ~/ 2;
-    for (int i = 0; i < pixelImage.height; i += pixelImage.height ~/ 10) {
+    final tenthHeight = (pixelImage.height / 10).floor();
+    for (int i = 0; i < pixelImage.height; i += tenthHeight) {
       final val = pixelImage.getPixel(halfWidth, i);
       pixelCount++;
       redBucket += img.getRed(val);
@@ -41,8 +42,9 @@ class Functions {
       blueBucket += img.getBlue(val);
     }
     final halfHeight = pixelImage.height ~/ 2;
-    for (int i = 0; i < pixelImage.width; i += pixelImage.width ~/ 10) {
-      final val = pixelImage.getPixel(halfHeight, i);
+    final tenthWidth = (pixelImage.width / 10).floor();
+    for (int i = 0; i < pixelImage.width; i += tenthWidth) {
+      final val = pixelImage.getPixel(i, halfHeight);
       pixelCount++;
       redBucket += img.getRed(val);
       greenBucket += img.getGreen(val);

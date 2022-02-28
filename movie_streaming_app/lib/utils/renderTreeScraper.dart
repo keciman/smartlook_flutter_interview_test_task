@@ -6,7 +6,7 @@ import 'package:movie_streaming_app/utils/functions.dart';
 
 class RenderTreeScraper {
   final List<SmartlookElement> smartlookElements = [];
-  bool hasScafold = false;
+  bool hasScaffold = false;
   String scrapeData(BuildContext context) {
     final List<SmartlookElement> elements = _scrapeElements(context);
     return "$elements";
@@ -39,10 +39,10 @@ class RenderTreeScraper {
       // otherwise more elegant solution would suit better
       //also this solution is not fast it would be better to find active screen
       if (element.widget is Scaffold) {
-        if (hasScafold == true) {
+        if (hasScaffold == true) {
           smartlookElements.clear();
         }
-        hasScafold = true;
+        hasScaffold = true;
         addSmartlookElement(
             element: element,
             color: (element.widget as Scaffold).backgroundColor,

@@ -42,13 +42,15 @@ Native way might be also possibility to solve this but I did not try it due to t
 
 Things I wish to do but did not make in time:
 
-1. Check visibility of active widget (checking just if the offset is inside would not help, because of opacity, offstage and other screens)
+1. Check visibility of widgets (checking just if the offset is inside of screen would not help, because of opacity, offstage and other screens over it)
 
 2. Check null values and act accordingly, some text or icons has no color, probably checked wrong child
 
 3. Try on iOS
 
 4. Check speed and make optimizations.
+
+5. Do some more tests so logic does not throw exception
 
 
 
@@ -62,6 +64,8 @@ Few things I would change in normal project:
 
 4. Change the functions that return widget to stles widget - it is  not code effective for rebuilds,
    flutter has to rebuild every time parent rebuilds - flutter cant use keys to remember it is the same widget
+   
+5. Name typos - also did not change because changing front end was not part of this task in my opinion
 
 
 

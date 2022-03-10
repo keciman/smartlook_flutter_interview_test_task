@@ -229,19 +229,19 @@ class _HomePageState extends State<HomePage> {
           items: [
             new BottomNavigationBarItem(
               icon: new Icon(Icons.home),
-              title: new Text("Home"),
+              label: "Home",
             ),
             new BottomNavigationBarItem(
               icon: new Icon(Icons.search),
-              title: new Text("Search"),
+              label: "Search",
             ),
             new BottomNavigationBarItem(
               icon: new Icon(Icons.play_arrow_outlined),
-              title: new Text("Movies"),
+              label: "Movies",
             ),
             new BottomNavigationBarItem(
               icon: new Icon(Icons.live_tv),
-              title: new Text("TV Shows"),
+              label: "TV Shows",
             )
           ],
         ),

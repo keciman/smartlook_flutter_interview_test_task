@@ -225,20 +225,14 @@ class _MovieScreenState extends State<MovieScreen> {
           currentIndex: 0,
           items: [
             new BottomNavigationBarItem(
-              icon: new Icon(Icons.home),
-              title: new Text("Home"),
-            ),
+                icon: new Icon(Icons.home), label: "Home"),
             new BottomNavigationBarItem(
-              icon: new Icon(Icons.search),
-              title: new Text("Search"),
-            ),
+                icon: new Icon(Icons.search), label: "Search"),
             new BottomNavigationBarItem(
-              icon: new Icon(Icons.play_arrow_outlined),
-              title: new Text("Movies"),
-            ),
+                icon: new Icon(Icons.play_arrow_outlined), label: "Movies"),
             new BottomNavigationBarItem(
               icon: new Icon(Icons.live_tv),
-              title: new Text("TV Shows"),
+              label: "TV Shows",
             )
           ],
         ),
